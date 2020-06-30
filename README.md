@@ -1,4 +1,4 @@
-# AgeOfEmpiresIIWiki
+# Age Of Empires II Wiki
 
 ## Description 
 This project uses the age of Empires II API to create a wiki (https://age-of-empires-2-api.herokuapp.com/docs/#/resources/get_technologies)
