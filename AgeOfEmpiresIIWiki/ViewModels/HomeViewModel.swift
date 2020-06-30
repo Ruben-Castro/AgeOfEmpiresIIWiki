@@ -15,11 +15,12 @@ let apiURL = "https://age-of-empires-2-api.herokuapp.com/api/v1/"
 class HomeViewModel: ObservableObject {
     
     @Published var civilizations  = CivilizationsData(civilizations: [Civilization]())
-    @Published var units = []
+    @Published var units = UnitsData(units: [Unit]())
     @Published var tech = []
     
     init() {
         fetchCivilizations()
+        fetchUnits()
     }
     
     private func fetchCivilizations() {
@@ -32,7 +33,7 @@ class HomeViewModel: ObservableObject {
             }
             guard let safeData = data else {return}
             
-            print(String(data: safeData, encoding: String.Encoding.utf8)!)
+            print((String(data: safeData, encoding: String.Encoding.utf8)!))
             DispatchQueue.main.async {
                 self.civilizations = try! JSONDecoder().decode(CivilizationsData.self, from: safeData)
                 
@@ -43,7 +44,26 @@ class HomeViewModel: ObservableObject {
     }
     
     private func fetchUnits() {
+        print("inside fetch Units")
         
+        guard let url = URL(string: apiURL + "units") else {return}
+        
+        URLSession.shared.dataTask(with: url) {(data,res,err) in
+            if err != nil {
+                print(err!)
+            }
+            if res != nil {
+                print(res!)
+            }
+            guard let safeData = data else {return}
+            
+            print((String(data: safeData, encoding: String.Encoding.utf8)!))
+            
+            DispatchQueue.main.async {
+                self.units = try! JSONDecoder().decode(UnitsData.self, from: safeData)
+            }
+        }.resume()
+        print("left fetch units")
         
     }
     
