@@ -25,9 +25,4 @@ struct Unit: Identifiable, Decodable, Hashable {
     
 }
 
-struct Cost :  Decodable, Hashable {
-    let Wood  : Int?
-    let Food  : Int?
-    let Stone : Int?
-    let Gold  : Int?
-}
+
