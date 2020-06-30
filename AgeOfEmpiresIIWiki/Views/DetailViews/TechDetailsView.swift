@@ -1,5 +1,5 @@
 //
-//  UnitDetailsView.swift
+//  TechDetailsView.swift
 //  AgeOfEmpiresIIWiki
 //
 //  Created by Ruben Castro Espinoza on 6/30/20.
@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-struct UnitDetailsView: View {
-    var unit: Unit
+struct TechDetailsView: View {
+    var techData: Tech
     var body: some View {
-        Text(unit.name)
+        Text(techData.name)
     }
 }
 
 /*
-struct UnitDetailsView_Previews: PreviewProvider {
+struct TechDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        UnitDetailsView()
+        TechDetailsView()
     }
 }
 */

@@ -28,9 +28,9 @@ struct CivilizationDetailsView: View {
             
            
             VStack(alignment: .leading) {
-                ExtractedView(title: "Expansion:    ", detail: civilizationDetails.expansion)
-                ExtractedView(title: "Army Type:   ", detail: civilizationDetails.army_type)
-                ExtractedView(title: "Team Bonus:", detail:civilizationDetails.team_bonus)
+                DetailView(title: "Expansion:    ", detail: civilizationDetails.expansion)
+                DetailView(title: "Army Type:   ", detail: civilizationDetails.army_type)
+                DetailView(title: "Team Bonus:", detail:civilizationDetails.team_bonus)
             }
             
 
@@ -52,18 +52,7 @@ struct CivilizationDetailsView_Previews: PreviewProvider {
 #endif
 
 
-struct ExtractedView: View {
-    var title:String
-    var detail:String
-    var body: some View {
-        HStack {
-            Text(title)
-            .font(.headline)
-            Text(detail)
-          
-        }
-    }
-}
+
 
 struct CivBonusView: View {
     var title: String
@@ -71,7 +60,7 @@ struct CivBonusView: View {
     
     var body: some View {
             List {
-                Section(header: Text("Civilization Bonuses")){
+                Section(header: Text(title)){
                     ForEach(0..<self.bonuses.count){
                         Text(self.bonuses[$0])
                         
