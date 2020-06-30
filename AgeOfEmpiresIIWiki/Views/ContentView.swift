@@ -10,13 +10,36 @@ import SwiftUI
 
 struct ContentView: View {
     
+    var homeVM = HomeViewModel()
+    var catergories = ["Civilizations", "Units", "Tech"]
+    
     
     
     var body: some View {
-        VStack {
-            Text()
+        NavigationView {
+            List(catergories, id: \.self) { category in
+                if category == "Civilizations"{
+                    NavigationLink(destination: CivilizationsView(civilizations: self.homeVM.civilizations)) {
+                         Text("Civilizations")
+                    }
+                } else if category == "Units" {
+                    NavigationLink(destination: UnitsView()) {
+                     Text("units")
+                    }
+                } else {
+                    NavigationLink(destination: UnitsView()) {
+                     Text("Tech")
+                    }
+                }
+                
+                
+                
+                }.navigationBarTitle("Age Of Empires II wiki")
+            }
+            
+        
         }
-    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
