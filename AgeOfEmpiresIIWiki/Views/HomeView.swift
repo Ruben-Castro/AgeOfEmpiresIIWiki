@@ -28,7 +28,7 @@ struct HomeView: View {
                      Text("units")
                     }
                 } else {
-                    NavigationLink(destination: UnitsView(unitsData: self.homeVM.units)) {
+                    NavigationLink(destination: TechView(techData: self.homeVM.tech)) {
                      Text("Tech")
                     }
                 }
