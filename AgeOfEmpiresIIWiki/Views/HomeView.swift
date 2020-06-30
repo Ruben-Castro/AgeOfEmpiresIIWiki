@@ -24,11 +24,11 @@ struct HomeView: View {
                          Text("Civilizations")
                     }
                 } else if category == "Units" {
-                    NavigationLink(destination: UnitsView()) {
+                    NavigationLink(destination: UnitsView(unitsData: self.homeVM.units)) {
                      Text("units")
                     }
                 } else {
-                    NavigationLink(destination: UnitsView()) {
+                    NavigationLink(destination: UnitsView(unitsData: self.homeVM.units)) {
                      Text("Tech")
                     }
                 }
