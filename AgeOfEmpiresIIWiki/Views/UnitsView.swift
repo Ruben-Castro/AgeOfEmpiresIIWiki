@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct UnitsView: View {
+    var unitsData : UnitsData
     
-    
-    var body: some View {
-        Text("Hello Units")
+  var body: some View {
+        List(unitsData.units) { unit in
+            NavigationLink(destination:UnitDetailsView(unit: unit) ){
+                Text(unit.name)
+            }
+        }.navigationBarTitle("Units",displayMode: .inline )
     }
 }
-
 /*
 struct UnitsView_Previews: PreviewProvider {
     static var previews: some View {
