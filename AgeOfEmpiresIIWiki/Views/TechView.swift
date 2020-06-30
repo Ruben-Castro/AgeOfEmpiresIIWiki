@@ -15,7 +15,7 @@ struct TechView: View {
             NavigationLink(destination: TechDetailsView(techData: tech)){
                 Text(tech.name)
             }
-        }.navigationBarTitle("Civilizations",displayMode: .inline )
+        }.navigationBarTitle("Tech",displayMode: .inline )
       
     }
 }
