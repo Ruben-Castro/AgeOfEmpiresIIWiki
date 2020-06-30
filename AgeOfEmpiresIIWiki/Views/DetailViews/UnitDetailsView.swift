@@ -26,19 +26,11 @@ struct UnitDetailsView: View {
                 CostDetailView(resourceType: "Food", cost: unit.cost.Food)
                 CostDetailView(resourceType: "Stone", cost: unit.cost.Stone)
                 CostDetailView(resourceType: "Gold", cost: unit.cost.Gold)
-                HStack {
-                    Spacer()
-                    VStack(alignment:.center, spacing: 10) {
-                        Text("Description")
-                        .font(.headline)
-                        Text(unit.description)
-                    }
-                    .padding(.top)
-                    Spacer()
-                }
+                DescriptionView(title: "Description",description: unit.description)
             }
             .padding(.leading)
             .padding(.top)
+           
             
             Spacer()
         }.background(Color.yellow)
@@ -55,3 +47,5 @@ struct UnitDetailsView_Previews: PreviewProvider {
     }
 }
 */
+
+
