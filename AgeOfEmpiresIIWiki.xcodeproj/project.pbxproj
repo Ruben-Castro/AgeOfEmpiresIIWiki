@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A279DFDD24AAC94700318A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279DFDC24AAC94700318A0F /* AppDelegate.swift */; };
+		A279DFDF24AAC94700318A0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279DFDE24AAC94700318A0F /* SceneDelegate.swift */; };
+		A279DFE124AAC94700318A0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279DFE024AAC94700318A0F /* ContentView.swift */; };
+		A279DFE324AAC94900318A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A279DFE224AAC94900318A0F /* Assets.xcassets */; };
+		A279DFE624AAC94900318A0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A279DFE524AAC94900318A0F /* Preview Assets.xcassets */; };
+		A279DFE924AAC94900318A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279DFE724AAC94900318A0F /* LaunchScreen.storyboard */; };
+		A279DFF424AAC94900318A0F /* AgeOfEmpiresIIWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279DFF324AAC94900318A0F /* AgeOfEmpiresIIWikiTests.swift */; };
+		A279DFFF24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279DFFE24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A279DFF024AAC94900318A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A279DFD124AAC94700318A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A279DFD824AAC94700318A0F;
+			remoteInfo = AgeOfEmpiresIIWiki;
+		};
+		A279DFFB24AAC94900318A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A279DFD124AAC94700318A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A279DFD824AAC94700318A0F;
+			remoteInfo = AgeOfEmpiresIIWiki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A279DFD924AAC94700318A0F /* AgeOfEmpiresIIWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeOfEmpiresIIWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A279DFDC24AAC94700318A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A279DFDE24AAC94700318A0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A279DFE024AAC94700318A0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A279DFE224AAC94900318A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A279DFE524AAC94900318A0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A279DFE824AAC94900318A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A279DFEA24AAC94900318A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A279DFEF24AAC94900318A0F /* AgeOfEmpiresIIWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeOfEmpiresIIWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A279DFF324AAC94900318A0F /* AgeOfEmpiresIIWikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeOfEmpiresIIWikiTests.swift; sourceTree = "<group>"; };
+		A279DFF524AAC94900318A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A279DFFA24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeOfEmpiresIIWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A279DFFE24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeOfEmpiresIIWikiUITests.swift; sourceTree = "<group>"; };
+		A279E00024AAC94900318A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A279DFD624AAC94700318A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFEC24AAC94900318A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFF724AAC94900318A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A279DFD024AAC94700318A0F = {
+			isa = PBXGroup;
+			children = (
+				A279DFDB24AAC94700318A0F /* AgeOfEmpiresIIWiki */,
+				A279DFF224AAC94900318A0F /* AgeOfEmpiresIIWikiTests */,
+				A279DFFD24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests */,
+				A279DFDA24AAC94700318A0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A279DFDA24AAC94700318A0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A279DFD924AAC94700318A0F /* AgeOfEmpiresIIWiki.app */,
+				A279DFEF24AAC94900318A0F /* AgeOfEmpiresIIWikiTests.xctest */,
+				A279DFFA24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A279DFDB24AAC94700318A0F /* AgeOfEmpiresIIWiki */ = {
+			isa = PBXGroup;
+			children = (
+				A279DFDC24AAC94700318A0F /* AppDelegate.swift */,
+				A279DFDE24AAC94700318A0F /* SceneDelegate.swift */,
+				A279DFE024AAC94700318A0F /* ContentView.swift */,
+				A279DFE224AAC94900318A0F /* Assets.xcassets */,
+				A279DFE724AAC94900318A0F /* LaunchScreen.storyboard */,
+				A279DFEA24AAC94900318A0F /* Info.plist */,
+				A279DFE424AAC94900318A0F /* Preview Content */,
+			);
+			path = AgeOfEmpiresIIWiki;
+			sourceTree = "<group>";
+		};
+		A279DFE424AAC94900318A0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A279DFE524AAC94900318A0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A279DFF224AAC94900318A0F /* AgeOfEmpiresIIWikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A279DFF324AAC94900318A0F /* AgeOfEmpiresIIWikiTests.swift */,
+				A279DFF524AAC94900318A0F /* Info.plist */,
+			);
+			path = AgeOfEmpiresIIWikiTests;
+			sourceTree = "<group>";
+		};
+		A279DFFD24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A279DFFE24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.swift */,
+				A279E00024AAC94900318A0F /* Info.plist */,
+			);
+			path = AgeOfEmpiresIIWikiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A279DFD824AAC94700318A0F /* AgeOfEmpiresIIWiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A279E00324AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWiki" */;
+			buildPhases = (
+				A279DFD524AAC94700318A0F /* Sources */,
+				A279DFD624AAC94700318A0F /* Frameworks */,
+				A279DFD724AAC94700318A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgeOfEmpiresIIWiki;
+			productName = AgeOfEmpiresIIWiki;
+			productReference = A279DFD924AAC94700318A0F /* AgeOfEmpiresIIWiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A279DFEE24AAC94900318A0F /* AgeOfEmpiresIIWikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A279E00624AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWikiTests" */;
+			buildPhases = (
+				A279DFEB24AAC94900318A0F /* Sources */,
+				A279DFEC24AAC94900318A0F /* Frameworks */,
+				A279DFED24AAC94900318A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A279DFF124AAC94900318A0F /* PBXTargetDependency */,
+			);
+			name = AgeOfEmpiresIIWikiTests;
+			productName = AgeOfEmpiresIIWikiTests;
+			productReference = A279DFEF24AAC94900318A0F /* AgeOfEmpiresIIWikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A279DFF924AAC94900318A0F /* AgeOfEmpiresIIWikiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A279E00924AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWikiUITests" */;
+			buildPhases = (
+				A279DFF624AAC94900318A0F /* Sources */,
+				A279DFF724AAC94900318A0F /* Frameworks */,
+				A279DFF824AAC94900318A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A279DFFC24AAC94900318A0F /* PBXTargetDependency */,
+			);
+			name = AgeOfEmpiresIIWikiUITests;
+			productName = AgeOfEmpiresIIWikiUITests;
+			productReference = A279DFFA24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A279DFD124AAC94700318A0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ruben Castro Espinoza";
+				TargetAttributes = {
+					A279DFD824AAC94700318A0F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A279DFEE24AAC94900318A0F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A279DFD824AAC94700318A0F;
+					};
+					A279DFF924AAC94900318A0F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A279DFD824AAC94700318A0F;
+					};
+				};
+			};
+			buildConfigurationList = A279DFD424AAC94700318A0F /* Build configuration list for PBXProject "AgeOfEmpiresIIWiki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A279DFD024AAC94700318A0F;
+			productRefGroup = A279DFDA24AAC94700318A0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A279DFD824AAC94700318A0F /* AgeOfEmpiresIIWiki */,
+				A279DFEE24AAC94900318A0F /* AgeOfEmpiresIIWikiTests */,
+				A279DFF924AAC94900318A0F /* AgeOfEmpiresIIWikiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A279DFD724AAC94700318A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A279DFE924AAC94900318A0F /* LaunchScreen.storyboard in Resources */,
+				A279DFE624AAC94900318A0F /* Preview Assets.xcassets in Resources */,
+				A279DFE324AAC94900318A0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFED24AAC94900318A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFF824AAC94900318A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A279DFD524AAC94700318A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A279DFDD24AAC94700318A0F /* AppDelegate.swift in Sources */,
+				A279DFDF24AAC94700318A0F /* SceneDelegate.swift in Sources */,
+				A279DFE124AAC94700318A0F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFEB24AAC94900318A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A279DFF424AAC94900318A0F /* AgeOfEmpiresIIWikiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A279DFF624AAC94900318A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A279DFFF24AAC94900318A0F /* AgeOfEmpiresIIWikiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A279DFF124AAC94900318A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A279DFD824AAC94700318A0F /* AgeOfEmpiresIIWiki */;
+			targetProxy = A279DFF024AAC94900318A0F /* PBXContainerItemProxy */;
+		};
+		A279DFFC24AAC94900318A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A279DFD824AAC94700318A0F /* AgeOfEmpiresIIWiki */;
+			targetProxy = A279DFFB24AAC94900318A0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A279DFE724AAC94900318A0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A279DFE824AAC94900318A0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A279E00124AAC94900318A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A279E00224AAC94900318A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A279E00424AAC94900318A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AgeOfEmpiresIIWiki/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AgeOfEmpiresIIWiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A279E00524AAC94900318A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AgeOfEmpiresIIWiki/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AgeOfEmpiresIIWiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A279E00724AAC94900318A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				INFOPLIST_FILE = AgeOfEmpiresIIWikiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgeOfEmpiresIIWiki.app/AgeOfEmpiresIIWiki";
+			};
+			name = Debug;
+		};
+		A279E00824AAC94900318A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				INFOPLIST_FILE = AgeOfEmpiresIIWikiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgeOfEmpiresIIWiki.app/AgeOfEmpiresIIWiki";
+			};
+			name = Release;
+		};
+		A279E00A24AAC94900318A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				INFOPLIST_FILE = AgeOfEmpiresIIWikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgeOfEmpiresIIWiki;
+			};
+			name = Debug;
+		};
+		A279E00B24AAC94900318A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P6WNQEVX2;
+				INFOPLIST_FILE = AgeOfEmpiresIIWikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = castroTech.AgeOfEmpiresIIWikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgeOfEmpiresIIWiki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A279DFD424AAC94700318A0F /* Build configuration list for PBXProject "AgeOfEmpiresIIWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A279E00124AAC94900318A0F /* Debug */,
+				A279E00224AAC94900318A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A279E00324AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A279E00424AAC94900318A0F /* Debug */,
+				A279E00524AAC94900318A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A279E00624AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A279E00724AAC94900318A0F /* Debug */,
+				A279E00824AAC94900318A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A279E00924AAC94900318A0F /* Build configuration list for PBXNativeTarget "AgeOfEmpiresIIWikiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A279E00A24AAC94900318A0F /* Debug */,
+				A279E00B24AAC94900318A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A279DFD124AAC94700318A0F /* Project object */;
+}
