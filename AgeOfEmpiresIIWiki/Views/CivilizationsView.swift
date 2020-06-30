@@ -12,14 +12,14 @@ struct CivilizationsView: View {
     var civilizations : CivilizationsData
     
     var body: some View {
-        NavigationView {
             List(civilizations.civilizations) { civ in
+                NavigationLink(destination: CivilizationDetailsView(civilizationDetails: civ)){
+                    Text(civ.name)
+                }
                 
-                Text(civ.name)
                            
-            }.navigationBarTitle("Civilizations")
-        }
-       
+            }.navigationBarTitle("Civilizations",displayMode: .inline )
+    
     }
 }
 

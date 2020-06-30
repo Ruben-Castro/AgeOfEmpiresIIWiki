@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     @ObservedObject var homeVM = HomeViewModel()
-    var catergories = ["Civilizations", "Units", "Tech"]
+    var catergories : [String] = ["Civilizations", "Units", "Tech"]
     
    
     
@@ -43,8 +43,9 @@ struct ContentView: View {
 
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
+
