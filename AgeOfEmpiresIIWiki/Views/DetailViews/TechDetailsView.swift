@@ -12,7 +12,7 @@ struct TechDetailsView: View {
     var techData: Tech
     var body: some View {
         VStack {
-            Image("units")
+            Image("tech")
                 .resizable()
                 .frame(height:200)
                 .scaledToFill()
