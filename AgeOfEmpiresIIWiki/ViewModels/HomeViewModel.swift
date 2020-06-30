@@ -7,30 +7,49 @@
 //
 
 import SwiftUI
-
+import Foundation
 // its an open api so no hiding necessary
 
 let apiURL = "https://age-of-empires-2-api.herokuapp.com/api/v1/"
 
 class HomeViewModel: ObservableObject {
     
-    @Published var messages = " inside observable object"
-    @Published var civilizations  = [Civilization]()
+    @Published var civilizations  = CivilizationsData(civilizations: [Civilization]())
     @Published var units = []
     @Published var tech = []
     
-    func fetchCivilizations() {
+    init() {
+        fetchCivilizations()
+    }
+    
+    private func fetchCivilizations() {
         // fetch json decode and update array property
+        guard let url = URL(string: apiURL + "civilizations") else{ return }
+            
+        URLSession.shared.dataTask(with: url) { (data,res,err) in
+            if err != nil {
+                print(err!)
+            }
+            guard let safeData = data else {return}
+            
+            print(String(data: safeData, encoding: String.Encoding.utf8)!)
+            DispatchQueue.main.async {
+                self.civilizations = try! JSONDecoder().decode(CivilizationsData.self, from: safeData)
+                
+                
+            }
+            
+        }.resume()
+    }
+    
+    private func fetchUnits() {
         
         
     }
     
-    func fetchUnits() {
-        
+    private func fetchTechnologies() {
         
     }
     
-    func fetchTechnologies() {
-        
-    }
+    
 }

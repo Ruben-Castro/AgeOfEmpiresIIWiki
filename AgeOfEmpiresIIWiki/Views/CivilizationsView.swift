@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct CivilizationsView: View {
-    var civilizations : [Civilization]
+    var civilizations : CivilizationsData
+    
     var body: some View {
         NavigationView {
-            List(civilizations) { civ in
+            List(civilizations.civilizations) { civ in
+                
                 Text(civ.name)
                            
             }.navigationBarTitle("Civilizations")
@@ -21,6 +23,7 @@ struct CivilizationsView: View {
     }
 }
 
+/*
 struct CivilizationViews_Previews: PreviewProvider {
     static let civilizations1 = [Civilization(name:"Aztecs", expansion:"sdfasd", army_type:"sdfasdf", unique_units:["sdfasd","sdfasdf"],
     unique_tech:["sdafas"], team_bonus:"sdfasdf", civilization_bonus:["sdfasd"]),
@@ -31,3 +34,5 @@ struct CivilizationViews_Previews: PreviewProvider {
         CivilizationsView(civilizations: civilizations1)
     }
 }
+ */
+ 

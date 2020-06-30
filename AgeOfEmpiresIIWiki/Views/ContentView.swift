@@ -10,12 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var homeVM = HomeViewModel()
+    @ObservedObject var homeVM = HomeViewModel()
     var catergories = ["Civilizations", "Units", "Tech"]
     
-    
+   
     
     var body: some View {
+       
         NavigationView {
             List(catergories, id: \.self) { category in
                 if category == "Civilizations"{
@@ -34,7 +35,7 @@ struct ContentView: View {
                 
                 
                 
-                }.navigationBarTitle("Age Of Empires II wiki")
+                }.navigationBarTitle("Age Of Empires II Wiki")
             }
             
         
