@@ -28,9 +28,9 @@ struct CivilizationDetailsView: View {
             
            
             VStack(alignment: .leading) {
-                DetailView(title: "Expansion:    ", detail: civilizationDetails.expansion)
-                DetailView(title: "Army Type:   ", detail: civilizationDetails.army_type)
-                DetailView(title: "Team Bonus:", detail:civilizationDetails.team_bonus)
+                DetailView(title: "Expansion", detail: civilizationDetails.expansion)
+                DetailView(title: "Army Type", detail: civilizationDetails.army_type)
+                DetailView(title: "Team Bonus", detail:civilizationDetails.team_bonus)
             }
             
 
