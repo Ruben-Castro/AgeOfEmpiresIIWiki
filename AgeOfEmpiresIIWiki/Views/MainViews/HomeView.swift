@@ -13,33 +13,43 @@ struct HomeView: View {
     @ObservedObject var homeVM = HomeViewModel()
     var catergories : [String] = ["Civilizations", "Units", "Tech"]
     
-   
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(named: "Custom-Green")
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+        .foregroundColor: UIColor.white,
+        .font : UIFont(name:"Papyrus", size: 40)!]
+    }
     
     var body: some View {
-       
         NavigationView {
-            List(catergories, id: \.self) { category in
-                if category == "Civilizations"{
-                    NavigationLink(destination: CivilizationsView(civilizations: self.homeVM.civilizations)) {
-                         Text("Civilizations")
-                    }
-                } else if category == "Units" {
-                    NavigationLink(destination: UnitsView(unitsData: self.homeVM.units)) {
-                     Text("units")
-                    }
-                } else {
-                    NavigationLink(destination: TechView(techData: self.homeVM.tech)) {
-                     Text("Tech")
-                    }
+            ZStack {
+                Color(.brown)
+            VStack(spacing: 5) {
+                NavigationLink(destination:CivilizationsView(civilizations: self.homeVM.civilizations)){
+                    CustomButton(title: "Civilization",customColor: "Custom-Green")
+                    
                 }
                 
+               NavigationLink(destination: UnitsView(unitsData: self.homeVM.units)){
+                    CustomButton(title: "Units",customColor: "Custom-Green")
+                    
+                }
                 
-                
-                }.navigationBarTitle("Age Of Empires II Wiki")
+                NavigationLink(destination: TechView(techData: self.homeVM.tech)){
+                    CustomButton(title: "Tech",customColor: "Custom-Green")
+                        
+                            
+                }
+               
+                            
             }
             
-        
+        }.navigationBarTitle("Age of Empires II Wiki")
         }
+            
+        
+    }
+        
 
 }
 
@@ -62,6 +72,7 @@ struct HomeView_Previews: PreviewProvider {
         }
     }
 }
+
 
 #endif
 
